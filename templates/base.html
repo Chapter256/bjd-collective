@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3bc81533bf.css" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -23,7 +23,6 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
@@ -85,6 +84,22 @@
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <h4>Follow Us</h4>
+            <p><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page, opens Facebook in a new tab" class="fa-brands fa-facebook-f"></a></p>
+            <p><a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page, opens Twitter in a new tab" class="fa-brands fa-twitter"></a></p>
+            <p><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page, opens Instagram in a new tab" class="fa-brands fa-instagram"></a></p>
+            <p><a href="https://www.discord.com" target="_blank" rel="noopener" aria-label="Join our Discord server, opens Discord in a new tab" class="fa-brands fa-discord"></a></p>
+        </div>
+        <div class="copyright">
+            <h2>© BJD Collective 2023</h2>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
     <script>
         setTimeout(function () {
             let messages = document.getElementById("msg"); 
